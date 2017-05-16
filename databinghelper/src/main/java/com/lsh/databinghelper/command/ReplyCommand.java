@@ -1,5 +1,9 @@
 package com.lsh.databinghelper.command;
 
+import com.lsh.databinghelper.messenger.Action0;
+import com.lsh.databinghelper.messenger.Action1;
+import com.lsh.databinghelper.messenger.Func0;
+
 /**
  * Created by kelin on 15-8-4.
  */
@@ -58,17 +62,5 @@ public class ReplyCommand<T> {
         if (execute1 != null && canExecute0()) {
             execute1.call(parameter);
         }
-    }
-
-    public interface Action0 {
-        void call();
-    }
-
-    public interface Action1<T> {
-        void call(T t);
-    }
-
-    public interface Func0<R> {
-        R call();
     }
 }

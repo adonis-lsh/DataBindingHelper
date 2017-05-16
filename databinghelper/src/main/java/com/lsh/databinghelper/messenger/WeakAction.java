@@ -2,9 +2,6 @@ package com.lsh.databinghelper.messenger;
 
 import java.lang.ref.WeakReference;
 
-import rx.functions.Action0;
-import rx.functions.Action1;
-
 /**
  * Created by kelin on 15-8-14.
  */
