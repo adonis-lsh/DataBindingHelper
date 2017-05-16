@@ -1,9 +1,5 @@
 package com.lsh.databinghelper.command;
 
-import rx.functions.Action0;
-import rx.functions.Action1;
-import rx.functions.Func0;
-
 /**
  * Created by kelin on 15-8-4.
  */
@@ -64,4 +60,15 @@ public class ReplyCommand<T> {
         }
     }
 
+    public interface Action0 {
+        void call();
+    }
+
+    public interface Action1<T> {
+        void call(T t);
+    }
+
+    public interface Func0<R> {
+        R call();
+    }
 }
